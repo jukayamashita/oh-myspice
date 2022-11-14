@@ -3,13 +3,13 @@
 
 ## users テーブル
 
-| Column             | Type   | Options                  |
-| ------------------ | ------ | ------------------------ |
-| email              | string | null: false, unique: true|
-| encrypted_password | string | null: false              |
-| name               | string | null: false              |
-| profile            | text   | null: false              |
-| favorite           | text   | null: false              |
+| Column                  | Type   | Options                  |
+| ----------------------- | ------ | ------------------------ |
+| email                   | string | null: false, unique: true|
+| encrypted_password      | string | null: false              |
+| last_name               | string | null: false              |
+| first_name              | string | null: false              |
+| favorite                |  text  | null: false              |
 
 ### Association
 
@@ -21,7 +21,7 @@
 | Column     | Type         | Options                        |
 | ---------- | ------------ | ------------------------------ |
 | item_name  | string       | null: false                    |
-| limit      | text         | null: false                    |
+| limit      | date         | null: false                    |
 | memo       | text         | null: false                    |
 | user       | references   | null: false, foreign_key: true |
 
