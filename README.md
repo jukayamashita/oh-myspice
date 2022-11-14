@@ -21,7 +21,7 @@
 | Column     | Type         | Options                        |
 | ---------- | ------------ | ------------------------------ |
 | item_name  | string       | null: false                    |
-| limit      | text         | null: false                    |
+| limit      | date         | null: false                    |
 | memo       | text         | null: false                    |
 | user       | references   | null: false, foreign_key: true |
 

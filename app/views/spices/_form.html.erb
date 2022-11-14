@@ -1,22 +1,22 @@
-<%= form_with model: モデル名, local: true do |f|%>
+<%= form_with model: @spice, local: true do |f|%>
   <div class="field">
-    <%= f.label :hoge, "プロトタイプの名称" %><br />
-    <%= f.text_field :hoge, id:"prototype_title" %>
+    <%= f.label :item_name, "アイテムの名前" %><br />
+    <%= f.text_field :item_name, id:"item_name" %>
   </div>
 
   <div class="field">
-    <%= f.label :hoge, "キャッチコピー" %><br />
-    <%= f.text_area :hoge, class: :form__text, id:"prototype_catch_copy" %>
+    <%= f.label :limit, "賞味期限" %><br />
+    <%= f.text_area :limit, class: :form__text, id:"limit" %>
   </div>
 
   <div class="field">
-    <%= f.label :hoge, "コンセプト" %><br />
-    <%= f.text_area :hoge, class: :form__text, id:"prototype_concept" %>
+    <%= f.label :memo, "メモ" %><br />
+    <%= f.text_area :memo, class: :form__text, id:"memo" %>
   </div>
 
   <div class="field">
-    <%= f.label :hoge, "プロトタイプの画像" %><br />
-    <%= f.file_field :hoge, id:"prototype_image" %>
+    <%= f.label :image, "アイテムの画像" %><br />
+    <%= f.file_field :image, id:"spice_image" %>
   </div>
 
   <div class="actions">

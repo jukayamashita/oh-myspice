@@ -7,4 +7,8 @@ class User < ApplicationRecord
   validates :nickname, presence: true
   validates :favorite, presence: true
   validates :profile, presence: true
+
+
+  has_many :spices, dependent: :destroy
+  has_many :comments
 end
