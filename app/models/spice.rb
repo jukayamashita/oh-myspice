@@ -9,5 +9,4 @@ class Spice < ApplicationRecord
   validates :limit, presence: true
   validates :memo, presence: true
 
-  
 end
